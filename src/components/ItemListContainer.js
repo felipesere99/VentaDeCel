@@ -1,33 +1,25 @@
+
 import React from "react";
 
-class Modelo extends React.Component {
-    render () {
+const Modelo = (props) => {
         return (
-            <h1>{this.props.valor}</h1>
+            <p>{props.modelo}</p>
         )
     }
-}
+const Precio= (props) => {
+    return (
+        <p>{props.precio}</p>
+    )
+} 
 
-class Articulos extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            celulares: ['Iphone XS', 'Samsung S22', 'Huawei Y9']
-        }
-    }
-
-
-    render () {
-        const modelos = this.state.celulares.map( t => (
-            <Modelo valor={t} />
-        ))
-
-        return (
-        <div>
-            <ul>{modelos}</ul>
-        </div>
-   
+const ItemListContainer = () => {
+    return (
+        <>
+        <ul>
+            <h1>Mas celulares proximamente</h1>
+        </ul>
+        </>
     )
 }
-}
-export default Articulos;
+
+export default ItemListContainer

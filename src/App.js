@@ -1,12 +1,12 @@
 //import logo from './logo.svg';
 import './App.css';
 import {NavBar} from './components/NavBar';
-import Articulos from './components/ItemListContainer'
+import ItemListContainer from './components/ItemListContainer.js'
 
 function App() {
   return <>
   <NavBar />
-  <Articulos />
+  <ItemListContainer />
   </>
   }
 
