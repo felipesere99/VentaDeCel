@@ -9,9 +9,9 @@ export const NavBar = () => {
                     <img style={logo} src="https://tienda.antel.com.uy/razuna/assets/1/C1E491498DD84E71960E4EE38E691C34/img/C7133CA320484B3B9AE5F788FC196A12/antel-fondoazul.png" alt="logo"/>
                 </div>
                 <div style={secciones}>
-                    <a className="hover" style={seccion}>Iphone</a>
-                    <a className="hover" style={seccion}>Samsung</a>
-                    <a className="hover" style={seccion}>Otros</a>
+                    <a href="/#" className="hover" style={seccion}>Iphone</a>
+                    <a href="/#" className="hover" style={seccion}>Samsung</a>
+                    <a href="/#" className="hover" style={seccion}>Otros</a>
                 </div>
                 <CartWidget/>
             </nav>
@@ -39,6 +39,6 @@ let secciones = {
     position: "relative",
 }
 let seccion = {
-    padding: 10, cursor: "pointer", right: 77, fontSize: 25, fontFamily: "helvetica", border: '3px solid', margin:5, borderRadius: 16,
+    padding: 10, cursor: "pointer", right: 77, fontSize: 25, fontFamily: "helvetica", border: '3px solid', margin:5, borderRadius: 16,   textDecorationLine: 'none'
 }
 

@@ -6,7 +6,7 @@ import ItemListContainer from './components/ItemListContainer.js'
 function App() {
   return <>
   <NavBar />
-  <ItemListContainer />
+  <ItemListContainer mensaje="Sin stock. Mas celulares proximamente"/>
   </>
   }
 
