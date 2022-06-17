@@ -1,19 +1,28 @@
 import React, {useState, useEffect} from "react";
 
-function ItemCount ({stock, initial, onAdd}) {
-    const [item, setItem] = useState(parseInt(initial));
+function ItemCount ({stock, initial }) {
+    const [count, setCount] = useState(initial);
 
     useEffect(() => {
-        if (item <= parseInt(stock)) setItem(item)
-    },[] )
+        console.log(count)
+    })
 
+    function sumar() {
+        if (stock > count)  setCount(count + 1)
+        else {setCount(count)}
+        }
+
+    function restar() {
+        if (count > 0)  setCount(count - 1)
+        else {setCount(count)}
+        }
 
     return (
         <div>
             <div style={estilo1}>
-            <button onClick={() => setItem(item + 1)} style={button}>+</button>
-            <p style={p}>{item}</p>
-            <button onClick={() => setItem(item - 1)} style={button}>-</button>
+            <button onClick={() => sumar()} style={button}>+</button>
+            <p style={p}>{count}</p>
+            <button onClick={() => restar()} style={button}>-</button>
             </div>
             <div style={divCarro}>
             <button style={buttonCarro}>Agregar al carrito</button>
