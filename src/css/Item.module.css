@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+}
+.modeloCel {
+    font-size: medium;
+}
+.precioCel {
+    font-size: medium;
+}
+.imagenCel {
+    height: 13rem;
+    margin: auto;
+}

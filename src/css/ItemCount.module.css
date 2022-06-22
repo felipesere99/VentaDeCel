@@ -1,0 +1,23 @@
+.estilo1 {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.button {
+    cursor: pointer;
+    margin: 5px;
+}
+.p {
+    padding: auto;
+    display: flex
+}
+.divCarro {
+    justify-content: center;
+    display: 'flex',
+}
+.buttonCarro {
+    border: white;
+    cursor: pointer;
+    font-size: large;
+    margin-bottom: 10px;
+}

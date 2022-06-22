@@ -1,33 +1,27 @@
-import React from "react";
-import ItemCount from "./ItemCount";
+import React, { useEffect, useState } from "react";
+import items from "../utils/Items";
+import MyPromise from "../utils/MyPromise";
 import ItemList from "./ItemList";
+import style from '../css/ItemListContainer.module.css'
+import ItemDetailContainer from "./ItemDetailContainer";
 
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
+    const [products, setProducts] = useState([])
+
+    useEffect(() => {
+        MyPromise(2000, items)
+        .then(resultado => setProducts(resultado))
+    }, [products])
     return (
         <>
-        <div style={container}>
-            <div style={info}>
-                <ItemList />
-            </div>
-            <div>
-                <ItemCount stock={5} initial={1}/>
-            </div>
+        <div className={style.container}>
+            <ItemList items={products} />
+            <ItemDetailContainer items={products} />
         </div>
         </>
     )
 }
 
-let container = {
-    backgroundColor: 'steelblue',
-    height: 300,
-    width: 220,
-    margin: 50,
-}
-let info = {
-    height: 200,
-    width: 160,
-    margin: 10
-}
 
 export default ItemListContainer

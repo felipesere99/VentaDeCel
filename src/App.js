@@ -7,7 +7,7 @@ function App() {
   return <>
   <NavBar />
   <ItemListContainer mensaje="Sin stock. Mas celulares proximamente"/>
-  </>
+    </>
   }
 
 export default App;

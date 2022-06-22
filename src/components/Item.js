@@ -1,32 +1,16 @@
 import React from "react";
+import style from '../css/Item.module.css';
+import ItemCount from "./ItemCount";
 
-export const items = [{
-    id: "111",
-    title: "Iphone 11 128 GB",
-    price: 1000,
-    pictureUrl: "https://http2.mlstatic.com/D_NQ_NP_668306-MLA46153270474_052021-O.jpg"
-   },
-   {
-    id: "112",
-    title: "Samsung s21 FE 5G",
-    price: 800,
-    pictureUrl: "https://http2.mlstatic.com/D_NQ_NP_800895-MLA44849337131_022021-O.jpg"
-   },
-   {
-    id: "113",
-    title: "Huawei P40 Pro Dual",
-    price: 900,
-    pictureUrl: "https://http2.mlstatic.com/D_NQ_NP_637087-MLA44156385787_112020-O.jpg"
-   }]
-
-function Item(items) {
-   
-
-
+function Item({title, price, pictureUrl, stock}) {
     return ( <>
-            <h2>{items.title}</h2>
-            <h3>{items.price}</h3>
-            <img src={items.pictureUrl} alt="imagenCel"/>
+        <div>
+            <h2 className={style.modeloCel}>{title}</h2>
+            <h3 className={style.precioCel}>U$S {price}</h3>
+            <img className={style.imagenCel} src={pictureUrl} alt="imagenCel"/>
+            <ItemCount stock={stock} initial={1} disabled={stock}/>
+        </div>
+            
     </>)
 }
 

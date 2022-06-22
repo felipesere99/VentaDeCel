@@ -1,5 +1,5 @@
 import React from "react";
-import {CartWidget} from './CartWidget.js'
+import CartWidget from './CartWidget.js'
 
 
 export const NavBar = () => {
@@ -22,16 +22,17 @@ let navBar = {
     backgroundColor: "steelblue",
     display: "flex",
     justifyContent: "space-around",
+    width: '100%'
 }
 let divLogo = {
     display: "flex"
 }
 let logo = {
-    margin: 12,
-    marginRight: 550,
+    margin: 'auto',
     height: 144,
     width: 223,
     borderRadius: 33,
+    position: "relative"
 }
 let secciones = {
     margin: "auto",
@@ -39,6 +40,6 @@ let secciones = {
     position: "relative",
 }
 let seccion = {
-    padding: 10, cursor: "pointer", right: 77, fontSize: 25, fontFamily: "helvetica", border: '3px solid', margin:5, borderRadius: 16,   textDecorationLine: 'none'
+    padding: 10, cursor: "pointer", fontSize: 25, fontFamily: "helvetica", border: '3px solid', margin:5, borderRadius: 16,   textDecorationLine: 'none'
 }
 
