@@ -1,0 +1,42 @@
+.navBar  {
+    background-color: steelblue;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.divLogo {
+    display: "flex"
+}
+.logo {
+    margin: auto;
+    height: 144px;
+    width: 223px;
+    border-radius: 33px;
+    position: relative;
+}
+.secciones {
+    margin: auto;
+    justify-content: space-around;
+    position: relative;
+}
+.seccion {
+    color: white;
+    background-color: rgb(1, 1, 88);
+    padding: 10px; 
+    cursor: pointer; 
+    font-size: 25px; 
+    font-family: "helvetica"; 
+    border: 3px solid rgb(207, 160, 4); 
+    margin:5px;
+    border-radius: 16px;  
+    text-decoration: none;
+}
+.seccion:hover {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: aliceblue;
+}

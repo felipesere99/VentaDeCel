@@ -1,29 +1,24 @@
 import React, {useEffect, useState} from "react";
 import MyPromise from "../utils/MyPromise";
 import items from "../utils/Items";
-import GetItem from "../utils/GetItem";
 import ItemDetail from "./ItemDetail";
 
 const ItemDetailContainer = () => {
-    const [itemElegido, setItemElegido] = useState([])
-    const [products, setProducts] = useState([])
+    const [itemElegido, setItemElegido] = useState('')
 
     useEffect(() => {
-        GetItem()
-        .then((resolve) => {
-            resolve.find(() => setItemElegido(itemElegido))
-        })
-
         MyPromise(2000, items)
-        .then(products => setProducts(products))
-    }, [products])
+        .then(resolve => setItemElegido(resolve.find(props => props.id === 1)))
+    }, )
     return (
         <>
         <div>
-            <ItemDetail 
+            <ItemDetail
+            title={itemElegido.title}
             description={itemElegido.description}
             pictureUrl={itemElegido.pictureUrl}
             price={itemElegido.price}
+            stock={itemElegido.stock}
             />
         </div>
         </>

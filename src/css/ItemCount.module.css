@@ -4,20 +4,42 @@
     position: relative;
 }
 .button {
+    background-color: steelblue;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
     cursor: pointer;
-    margin: 5px;
+}
+.button:hover {
+    background-color: rgb(16, 54, 84);
+
 }
 .p {
-    padding: auto;
-    display: flex
+    display: flex;
 }
 .divCarro {
     justify-content: center;
     display: 'flex',
 }
 .buttonCarro {
-    border: white;
+    background-color: steelblue;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 9px;
     cursor: pointer;
-    font-size: large;
-    margin-bottom: 10px;
+}
+.buttonCarro:hover {
+    background-color: rgb(16, 54, 84);
+
 }

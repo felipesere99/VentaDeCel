@@ -11,3 +11,31 @@
     height: 13rem;
     margin: auto;
 }
+.itemlist {
+    border: 5px solid steelblue;
+    padding: 0 10px;
+    border-radius: 9px;
+    margin: 30px;
+}
+.detallesCel {
+    display: flex;
+    margin: 10px;
+    background-color: steelblue;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 9px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container {
+    height: auto;
+    width: auto;
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
